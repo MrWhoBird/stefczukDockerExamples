@@ -1,0 +1,2 @@
+Run the container:
+docker run -it -v ${PWD}:/app python:alpine python /app/main.py

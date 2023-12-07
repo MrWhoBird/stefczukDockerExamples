@@ -1,0 +1,2 @@
+Run the container:
+docker run -d -p 8888:80 -v ${PWD}/html:/usr/share/nginx/html nginx:alpine

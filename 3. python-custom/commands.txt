@@ -1,0 +1,11 @@
+Create image:
+docker build . -t python-custom 
+
+Create containers:
+docker run -d --name mongo mongo
+docker run -it python-custom
+
+Create network:
+docker network create python-mongo
+docker network connect python-mongo mongo
+docker run -it --network=python-mongo python-custom
